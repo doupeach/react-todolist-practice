@@ -1,44 +1,56 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-.homepage, .listpage {
+.homepage,
+.listpage {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 30px 0;
 }
 
-.homepage, nav { 
+.homepage,
+nav {
   margin: 35px 0;
 }
 
-#start-btn, #to-homepage-btn, #add-record-btn, .delete-btn{
+#start-btn,
+#to-homepage-btn,
+#add-record-btn,
+.delete-btn {
   border: 1px solid #e5e5e5;
   padding: 5px 12px;
   cursor: pointer;
 }
 
-.homepage-header, .listpage-container {
+.homepage-header,
+.listpage-container {
   width: 60%;
   height: 600px;
   border: 1px solid #ececec;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
-.homepage-header div{
+#loading-gif {
+  position: absolute;
+  margin: auto;
+}
+
+.homepage-header div {
   margin: 0;
   width: 100%;
   display: flex;
@@ -46,7 +58,7 @@ code {
   align-items: center;
 }
 
-.homepage-header .title{
+.homepage-header .title {
   background-color: #223444;
   color: #ffffff;
   height: 15%;
@@ -70,28 +82,28 @@ code {
   height: 15%;
 }
 
-.addform input{
+.addform input {
   height: 22px;
 }
 
-.addform button{
+.addform button {
   margin-left: 10px;
   cursor: pointer;
 }
 
 .list {
-  display:flex;
+  display: flex;
   justify-content: space-around;
   align-items: center;
   margin-top: 10px;
   width: 300px;
 }
 
-.list div{
+.list div {
   width: 200px;
 }
 
-.list button{
+.list button {
   margin: 2px 4px;
   cursor: pointer;
 }
